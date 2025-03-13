@@ -1,7 +1,9 @@
-# SOURCE_URL:="https://api.weather.gov/alerts/active?status=actual&area=CA&code=HWW"
-SOURCE_URL:="https://s3.amazonaws.com/media.johnkeefe.net/data/example_warnings.json"
+SOURCE_URL:="https://api.weather.gov/alerts/active?status=actual&area=CA&code=HWW"
+# SOURCE_URL:="https://s3.amazonaws.com/media.johnkeefe.net/data/example_warnings.json"
 
 all: clean download slack
+
+# adding this just so there's something to commit
 
 download:
 	-mkdir tmp

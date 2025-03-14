@@ -3,7 +3,7 @@ name: warnings
 on:
  schedule:
    - cron: '*/45 * * * *'   # <-- Set your cron here (UTC). Uses github which can be ~2-10 mins late.
-gitworkflow_dispatch:
+workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref_name }}
